@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import elfantLogo from '/public/img/elfantlogo.gif'
 export let name = "";
 const getName = () => {
     if(process.browser){
@@ -21,7 +22,7 @@ export default function Home() {
       <section className={styles.container}>
         <div className={styles.formBox}>
             <div className={styles.logo}>
-                <Image className={styles.compLogo} src="/../public/img/elfantlogo.gif" width={527} height={233}/>
+                <Image className={styles.compLogo} src={elfantLogo} width={527} height={233}/>
             </div>
             <div className={styles.checkIn}>
                 <form className={styles.checkInForm}>
