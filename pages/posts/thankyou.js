@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/ThankYou.module.css'
+import elfantLogo from '/public/img/elfantlogo.gif'
 import {name} from '../index';
 
 export default function ThankYou() {
@@ -15,7 +16,7 @@ export default function ThankYou() {
       <section className={styles.container}>
         <div className={styles.formBox}>
             <div className={styles.logo}>
-                <Image className={styles.compLogo} src="/../public/img/elfantlogo.gif" width={527} height={233}/>
+                <Image className={styles.compLogo} src={elfantLogo} width={527} height={233}/>
             </div>
         <div className={styles.thankYouBox}>
               <h1 className={styles.ThankYou}>{`Thank you, ${name}!`}</h1>
