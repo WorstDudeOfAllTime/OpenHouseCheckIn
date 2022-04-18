@@ -1,0 +1,11 @@
+.lowerHalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qrbox {
+    height: 200px;
+    width: 200px;
+    background: black;
+}
